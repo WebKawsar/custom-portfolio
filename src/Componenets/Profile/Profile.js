@@ -9,7 +9,7 @@ import MainMenu from '../MainMenu/MainMenu';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: "400px",
+        minWidth: "380px",
         height: "100vh",
         textAlign: "center",
         backgroundColor: "#444444",
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
         width: "180px",
         height: "180px",
         borderRadius: "50%",
-        border: "5px solid grey",
+        border: "3px solid white",
 
     },
     name: {
@@ -42,9 +42,10 @@ const useStyles = makeStyles({
         backgroundColor: "#444444",
         color: "white",
         textDecoration: "none",
+        transitionDuration: "1s",
         "&:hover": {
             backgroundColor: "white",
-            color: "grey"
+            color: "black",
         }
 
     },
@@ -79,8 +80,8 @@ const Profile = () => {
                     <img className={classes.image} src="https://i.ibb.co/vhGdJNq/Kawsar.jpg" alt="Profile"/>
                 </Box>
                 <Box className={classes.profileInfo}>
-                    <h2 className={classes.name} style={{color: "white", marginBottom: "0", fontSize: "40px"}}>Kawsar Ahmed</h2>
-                    <p className="animate__animated animate__bounceInLeft" style={{color: "#bbbbbb", margin: "5px 0 25px", fontSize: "22px"}}>Front-end Web Developer</p>
+                    <h2 className={classes.name} style={{color: "white", marginBottom: "0", fontSize: "36px"}}>Kawsar Ahmed</h2>
+                    <h4 className="animate__animated animate__bounceInLeft" style={{color: "#bbbbbb", margin: "5px 0 25px", fontSize: "18px", fontWeight: "400"}}>Front-end Web Developer</h4>
                     <Box>
 
                     

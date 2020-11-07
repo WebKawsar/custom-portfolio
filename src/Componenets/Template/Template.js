@@ -6,16 +6,14 @@ import Profile from '../Profile/Profile';
 
 const useStyles = makeStyles({
     root: {
-        // width: "95%",
-        // marginLeft: "5%",
-        // margin: "auto",
+
     },
     fixed: {
         position: "fixed"
     },
     children: {
         
-        marginLeft: "485px",
+        marginLeft: "465px",
     }
 
 
