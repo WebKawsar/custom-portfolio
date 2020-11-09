@@ -38,6 +38,9 @@ const useStyles = makeStyles({
     link: {
         textDecoration: "none",
         color: "white",
+        "&:hover": {
+            color: "#04b4e0"
+        }
     }
 
 

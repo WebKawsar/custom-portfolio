@@ -12,7 +12,6 @@ const useStyles = makeStyles({
         position: "fixed"
     },
     children: {
-        
         marginLeft: "465px",
     }
 
@@ -23,25 +22,21 @@ const Template = (props) => {
 
     const classes = useStyles();
     return (
-        <>
-            
-                
+            <>
                 <Box className={classes.root}>
-
                     <Box className={classes.fixed}>
                         <MainMenu></MainMenu>
                         <Profile></Profile>
                     </Box>
-                    
+
                     <Box className={classes.children}>
                         {
                             props.children
                         }
                     </Box>
-                    
                 </Box>
-             
-        </>
+                
+            </>
     );
 };
 

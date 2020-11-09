@@ -9,12 +9,24 @@ const useStyles = makeStyles({
     root: {
         backgroundColor: "#222222",
         color: "white",
+        padding: "10px 50px",
+        height: "100vh"
 
     },
-    intro: {
-        height: "100px",
-        textAlign: 'center'
+    about: {
+        fontSize: "35px",
+        marginBottom: "10px"
+    },
+    highlighter: {
+        color: "#04B4E0",
+    },
+    myInfo: {
+        textAlign: "justify"
+    },
+    info: {
+        paddingLeft: "30px"
     }
+
 
 
 
@@ -26,223 +38,28 @@ const About = () => {
 
     const classes = useStyles();
     return (
-        <>
-        
-            <Template>
-                <Grid container>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>About Me</h3>
+            <>
+                <Template>
+                    <Grid className={classes.root} container>
+                        <Grid className="animate__animated animate__bounceInUp" item md={12}>
+                            <h3 className={classes.about}>About <span className={classes.highlighter}>Me</span></h3>
                             <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
+                                <Grid item md={7}>
+                                    <p className={classes.myInfo}>Programming is my passion. I love to work with web technologies. Always try to grab the new features of technology. Last few years made myself skilled in the field of web application development. Expert in developing Single Page Application (SPA) using React JS. I am very much comfotable with JavaScript. I worked with different types of libraries and framework. Among of them I feel comfortable with React, Node, Express, MongoDB, Material UI etc</p>
                                 </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
+                                <Grid className={classes.info} item md={5}>
+                                    <p><span className={classes.highlighter}>Age : </span>24</p>
+                                    <p><span className={classes.highlighter}>Residence : </span>Bangladeshi</p>
+                                    <p><span className={classes.highlighter}>Address : </span>MoulviBazar, Sylhet, Bangladesh</p>
+                                    <p><span className={classes.highlighter}>Email : </span>web.kawsarahmed@gmail.com</p>
+                                    <p><span className={classes.highlighter}>Phone : </span>+880 1733 920 943</p>
                                 </Grid>
                             </Grid>
-                        </Box>
+                        </Grid>
                     </Grid>
-
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                    <Grid item md={12}>
-                        <Box className={classes.root}>
-                            <h3>What I Do</h3>
-                            <Grid container>
-                                <Grid item md={6}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, vero quibusdam! Culpa dolorem blanditiis mollitia error necessitatibus dolorum excepturi est vel nisi quae, omnis magni magnam id molestias harum sunt odio ad soluta quas veritatis. Veritatis recusandae tenetur eos! Provident pariatur totam soluta aliquam blanditiis esse laudantium sed at vel.
-                                </Grid>
-                                <Grid item md={6}>
-                                    <p><span>Age : 24</span></p>
-                                    <p><span>Residence : Bangladeshi</span></p>
-                                    <p><span>Address : Dhaka, Bangladesh</span></p>
-                                    
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Grid>
-                </Grid>
-            </Template>
-            
-        </>
+                </Template>
+                
+            </>
     );
 };
 
