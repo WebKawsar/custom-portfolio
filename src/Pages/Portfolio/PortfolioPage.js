@@ -9,7 +9,6 @@ const PortfolioPage = () => {
     return (
         <>
         <Template>
-        
             <Portfolio></Portfolio>
         </Template> 
         </>

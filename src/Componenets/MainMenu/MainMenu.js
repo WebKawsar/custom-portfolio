@@ -57,24 +57,24 @@ const MainMenu = () => {
                     <Box className={classes.item}>
                         <Link to="/" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faHome} />
-                            <span style={{fontSize: "14px", display: "block"}} class>Home</span>
+                            <span style={{fontSize: "14px", display: "block"}}>Home</span>
                         </Link>
                     </Box>
 
                     <Box className={classes.item}>
                         <Link to="/about" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faUser} />
-                            <span style={{fontSize: "14px", display: "block"}} class>About Me</span>
+                            <span style={{fontSize: "14px", display: "block"}}>About Me</span>
                         </Link>
                     </Box>
 
                     
-                    <Box className={classes.item}>
-                        <Link to="/" className={classes.link}>
+                    {/* <Box className={classes.item}>
+                        <Link to="/resume" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faGraduationCap} />
                             <span style={{fontSize: "14px", display: "block"}}>Resume</span>
                         </Link>
-                    </Box>
+                    </Box> */}
                     <Box className={classes.item}>
                         <Link to="/portfolio" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faBriefcase} />
@@ -82,13 +82,13 @@ const MainMenu = () => {
                         </Link>
                     </Box>
                     <Box className={classes.item}>
-                        <Link to="/" className={classes.link}>
+                        <Link to="/blog" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faBook} />
                             <span style={{fontSize: "14px", display: "block"}}>Blog</span>
                         </Link>
                     </Box>
                     <Box className={classes.item}>
-                        <Link to="/" className={classes.link}>
+                        <Link to="/contact" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faEnvelope} />
                             <span style={{fontSize: "14px", display: "block"}}>Contact</span>
                         </Link>

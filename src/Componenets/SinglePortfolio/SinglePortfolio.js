@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     paper: {
         padding: "30px",
         marginTop: "155px",
-        backgroundColor: "#172A45"
+        backgroundColor: "#042F67",
     },
     img: {
         width: "100%",
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     },
     textPaper: {
         padding: "30px",
-        margin: "35px 0 0 -40px",
+        margin: "0 0 0 -40px",
         backgroundColor: "#172A45",
         color: "white"
     },
@@ -34,6 +34,7 @@ const useStyles = makeStyles({
         backgroundColor: "#4B5769",
         border: "none",
         color: "white",
+        cursor: "pointer"
     },
     icon: {
         fontSize: "25px",
@@ -55,7 +56,7 @@ const SinglePortfolio = (props) => {
         <>
             <Grid item md={12}>
                 <Paper className={classes.paper}>
-                    <Grid container>
+                    <Grid container alignItems="center">
                         <Grid item md={6}>
                             <Link to="/"><img className={classes.img} src={img} alt=""/></Link>
                         </Grid>

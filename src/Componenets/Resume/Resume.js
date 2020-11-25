@@ -40,7 +40,6 @@ const Resume = () => {
             <>
             <Template>
                 <Grid className={classes.root} container>
-                    
                     <Grid item md={6}>
                         <h2 className={classes.resume}>Resume</h2>
                         <h3 style={{fontSize: "25px"}}>Education</h3>

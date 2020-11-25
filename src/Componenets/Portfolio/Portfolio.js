@@ -63,7 +63,7 @@ const Portfolio = (props) => {
         <>  
             <Box className={classes.root}>
                 <Container fluid>
-                    <Grid className="animate__animated animate__bounceInRight" container>
+                    <Grid className="animate__animated animate__bounceInUp" container>
                         {
                             allPortfolio.map(portfolio => <SinglePortfolio key={portfolio.id} portfolio={portfolio}></SinglePortfolio>)
                         }
