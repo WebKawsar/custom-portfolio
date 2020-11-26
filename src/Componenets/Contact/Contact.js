@@ -62,7 +62,15 @@ const Contact = () => {
         
         sendForm('267257267257', 'template_io559qs', '#contact-form')
         .then((result) => {
-            console.log(result.text);
+            
+            if(result.text === "OK"){
+                alert("Message Send Successfully. As soon as possible try to reply you.")
+                document.getElementById("name").value ="";
+                document.getElementById("email").value ="";
+                document.getElementById("subject").value ="";
+                document.getElementById("message").value ="";
+            }
+
         }, (error) => {
             console.log(error.text);
         });

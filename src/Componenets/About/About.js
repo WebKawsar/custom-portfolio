@@ -39,6 +39,21 @@ const useStyles = makeStyles({
     },
     img: {
         width: "100%"
+    },
+    skillBtn: {
+        padding: "10px 38px",
+        borderRadius: "5px",
+        margin: "10px 10px",
+        border: "2px solid white",
+        backgroundColor: "#444444",
+        color: "white",
+        textDecoration: "none",
+        transitionDuration: "1s",
+        "&:hover": {
+            backgroundColor: "white",
+            color: "black",
+            cursor: "pointer"
+        }
     }
 
 
@@ -75,6 +90,29 @@ const About = () => {
                                     
                                 </Grid>
                             </Grid>
+                        </Grid>
+                        <Grid item md={12}>
+                            <h3 className={classes.about}> <span className={classes.highlighter}>Skills</span></h3>
+                            <Box>
+                                <button className={classes.skillBtn}>React</button>
+                                <button className={classes.skillBtn}>Node</button>
+                                <button className={classes.skillBtn}>MongoDB</button>
+                                <button className={classes.skillBtn}>Express</button>
+
+                                <button className={classes.skillBtn}>JavaScript</button>
+                                <button className={classes.skillBtn}>Material UI</button>
+                                <button className={classes.skillBtn}>Bootstrap</button>
+                                <button className={classes.skillBtn}>SASS</button>
+                                <button className={classes.skillBtn}>HTML</button>
+                                <button className={classes.skillBtn}>CSS</button>
+                                <button className={classes.skillBtn}>Firebase</button>
+                                <button className={classes.skillBtn}>Netlify</button>
+                                <button className={classes.skillBtn}>Heroku</button>
+                                <button className={classes.skillBtn}>Jira</button>
+                                <button className={classes.skillBtn}>Git & Github</button>
+                                <button className={classes.skillBtn}>VS Code</button>
+                               
+                            </Box>
                         </Grid>
 
                         <Grid className="animate__animated animate__bounceInUp" item md={12}>

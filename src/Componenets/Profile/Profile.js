@@ -5,6 +5,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import profile from "../../images/programming.jpg";
 import MainMenu from '../MainMenu/MainMenu';
+import Typical from 'react-typical'
+
 
 
 const useStyles = makeStyles({
@@ -80,31 +82,36 @@ const Profile = () => {
                     <img className={classes.image} src="https://i.ibb.co/vhGdJNq/Kawsar.jpg" alt="Profile"/>
                 </Box>
                 <Box className={classes.profileInfo}>
+
                     <h2 className={classes.name} style={{color: "white", marginBottom: "0", fontSize: "36px"}}>Kawsar Ahmed</h2>
-                    <h4 className="animate__animated animate__bounceInLeft" style={{color: "#bbbbbb", margin: "5px 0 25px", fontSize: "18px", fontWeight: "400"}}>Front-end Web Developer</h4>
-                    <Box>
+                    <h4 className="animate__animated animate__bounceInLeft" style={{color: "#bbbbbb", margin: "5px 0 25px", fontSize: "18px", fontWeight: "400"}}>
+                        <Typical
+                            steps={['Front-end Web Developer', 1000, 'Web Developer', 500, "React Developer", 1000, "JavaScript Developer", 1000]}
+                            loop={Infinity}
+                            wrapper="p"
+                        />
+                    </h4>
 
                     
-                    <Box className={classes.social}>
-                        {/* <ul>
-                            <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
-                            <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
-                            <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
-                        </ul> */}
 
-                        <Box>
-                            <a href="https://www.facebook.com/web.kawsarahmed"><FontAwesomeIcon className={classes.icon} icon={faFacebookSquare} /></a>
-                        </Box>
-                        <Box>
-                            <a href="https://www.linkedin.com/in/web-kawsar-ahmed/"><FontAwesomeIcon className={classes.icon} icon={faLinkedin} /></a>
-                        </Box>
-                        <Box>
-                            <a href="https://github.com/WebKawsar"><FontAwesomeIcon className={classes.icon} icon={faGithubSquare} /></a>
-                        </Box>
-                        
+                    <Box>
+                        <Box className={classes.social}>
+                            {/* <ul>
+                                <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
+                                <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
+                                <li><a href="/"><FontAwesomeIcon className={classes.icon} icon={faFacebook} /></a></li>
+                            </ul> */}
 
-                    </Box>
-
+                            <Box>
+                                <a href="https://www.facebook.com/web.kawsarahmed"><FontAwesomeIcon className={classes.icon} icon={faFacebookSquare} /></a>
+                            </Box>
+                            <Box>
+                                <a href="https://www.linkedin.com/in/web-kawsar-ahmed/"><FontAwesomeIcon className={classes.icon} icon={faLinkedin} /></a>
+                            </Box>
+                            <Box>
+                                <a href="https://github.com/WebKawsar"><FontAwesomeIcon className={classes.icon} icon={faGithubSquare} /></a>
+                            </Box>
+                        </Box>
                     </Box>
                     <a style={{ overflow: "hidden", display: "inline-block"}} href="https://drive.google.com/u/1/uc?id=1jxzsiglqKV-yMPP5Jw1lpSu603fLj0rC&export=download" className={classes.cv}>Download CV</a>
 

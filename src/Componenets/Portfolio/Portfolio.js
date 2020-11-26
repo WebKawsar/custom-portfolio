@@ -70,7 +70,7 @@ const allPortfolio = [
         name: "Apartment Hunt ( Team Project )",
         description: [
 
-            " This was a group project. Where I have worked with a teammate.", 
+            " This was a group project. Where I have worked with team.", 
             " This is an app for real estate with an easy admin panel.",
             " This Site is fully responsive.",
             " User can search for house/ apartments and book them",
@@ -92,7 +92,7 @@ const allPortfolio = [
             " A traveler can choose her favorite place.", 
             " Submitting the booking form is an interested traveler.",
             " Without login/register can’t submit the booking form.",
-            " After submitting the booking form see the nearest hotel information.",
+            " After submitting the booking form see the nearest hotel info.",
             " Hotel information is restricted."
 
         ],
