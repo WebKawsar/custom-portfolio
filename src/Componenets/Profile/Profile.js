@@ -106,7 +106,7 @@ const Profile = () => {
                     </Box>
 
                     </Box>
-                    <a style={{ overflow: "hidden", display: "inline-block"}} href="https://drive.google.com/u/0/uc?id=176xqxutSVQAU6til2zS7mbCSOYJNcN2B&export=download" className={classes.cv}>Download CV</a>
+                    <a style={{ overflow: "hidden", display: "inline-block"}} href="https://drive.google.com/u/1/uc?id=1jxzsiglqKV-yMPP5Jw1lpSu603fLj0rC&export=download" className={classes.cv}>Download CV</a>
 
                     {/* <Link className={classes.cv} to="https://drive.google.com/u/0/uc?id=176xqxutSVQAU6til2zS7mbCSOYJNcN2B&export=download">Download CV</Link> */}
                 </Box>
