@@ -45,45 +45,45 @@ const allPortfolio = [
             liveLink: "https://volunteer-network-work.web.app/"
         }
     },
-    // {
-    //     id: 103,
-    //     name: "Ema John Ecommerce Web Application",
-    //     description: [
+    {
+        id: 103,
+        name: "Ema John Ecommerce Web Application",
+        description: [
 
-    //         " ", 
-    //         " ",
-    //         " ",
-    //         " ",
-    //         " "
+            " It is a ecommerce project", 
+            " Admin can add product",
+            " User can product add in cart",
+            " User can review order & cheackout",
+            " Payment system "
 
-    //     ],
-    //     img: "https://i.ibb.co/17qxCcM/ema-jofn.png",
-    //     skills: ["React", "Node", "MongoDB", "express"],
-    //     link: {
-    //         githubLink: "https://github.com/WebKawsar/ema-john-simple",
-    //         liveLink: "https://ema-john-simple-ecommerce.web.app/"
-    //     }
-    // },
+        ],
+        img: "https://i.ibb.co/17qxCcM/ema-jofn.png",
+        skills: ["React", "Node", "MongoDB", "express"],
+        link: {
+            githubLink: "https://github.com/WebKawsar/ema-john-simple",
+            liveLink: "https://ema-john-simple-ecommerce.web.app/"
+        }
+    },
 
-    // {
-    //     id: 104,
-    //     name: "Apartment Hunt ( Team Project )",
-    //     description: [
+    {
+        id: 104,
+        name: "Apartment Hunt ( Team Project )",
+        description: [
 
-    //         " ", 
-    //         " ",
-    //         " ",
-    //         " ",
-    //         " "
+            " This was a group project. Where I have worked with a teammate.", 
+            " This is an app for real estate with an easy admin panel.",
+            " This Site is fully responsive.",
+            " User can search for house/ apartments and book them",
+            " Admin can add houses and change the order status."
 
-    //     ],
-    //     img: "https://i.ibb.co/r0hnmw0/apartment-hunt.png",
-    //     skills: ["React", "Node", "MongoDB", "express"],
-    //     link: {
-    //         githubLink: "https://github.com/Asaduzzaman607/mern-apartment-rental-client",
-    //         liveLink: "https://mern-apartment-rental-app.web.app/"
-    //     }
-    // },
+        ],
+        img: "https://i.ibb.co/r0hnmw0/apartment-hunt.png",
+        skills: ["React", "Node", "MongoDB", "express"],
+        link: {
+            githubLink: "https://github.com/Asaduzzaman607/mern-apartment-rental-client",
+            liveLink: "https://mern-apartment-rental-app.web.app/"
+        }
+    },
     {
         id: 105,
         name: "Travel Guru Auth Application",
