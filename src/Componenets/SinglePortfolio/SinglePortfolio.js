@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     paper: {
         padding: "30px",
         marginTop: "155px",
-        backgroundColor: "#042F67",
+        backgroundColor: "#130f40",
     },
     img: {
         width: "100%",
@@ -63,7 +63,11 @@ const SinglePortfolio = (props) => {
                         <Grid item md={6}>
                             <Paper className={classes.textPaper}>
                                 <h2 style={{margin: "0"}}>{name}</h2>
-                                <p>{description}</p>
+                                {/* <p>{description}</p> */}
+
+                                <ul style={{listStyle: "none", margin: "12px 0", padding: "0"}}>
+                                    {description && description.map(desc => <li> -- {desc}</li>)}
+                                </ul>
                                 <Box>
                                     <button className={classes.skillButton}>React</button>
                                     <button className={classes.skillButton}>Node</button>
@@ -72,7 +76,7 @@ const SinglePortfolio = (props) => {
                                 </Box>
                                 <Box>
                                     <a target="_blank" href={githubLink}> <FontAwesomeIcon className={classes.icon} icon={faGithub} /></a>
-                                    <a target="_blank" href={githubLink}> <FontAwesomeIcon className={classes.icon} icon={faExternalLinkSquareAlt} /></a>
+                                    <a target="_blank" href={liveLink}> <FontAwesomeIcon className={classes.icon} icon={faExternalLinkSquareAlt} /></a>
 
 
                                     {/* <Link to={githubLink}>
