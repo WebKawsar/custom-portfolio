@@ -38,7 +38,7 @@ const Intro = () => {
     return (
         <>
             <Box className={classes.root}>
-                <Box className={classes.intro}>
+                <Box className={`${classes.intro} intro`}>
                     <h1 className="animate__animated animate__bounceInDown" style={{fontSize: "60px", color: "white", margin: "0 0"}}>Kawsar Ahmed</h1>
                     <p className="animate__animated animate__bounceInUp" style={{fontSize: "25px", color: "#aaaaaa", margin: "0"}}>Front-end Web Developer</p>
                 </Box>
