@@ -1,0 +1,21 @@
+img {
+    max-width: 100%;
+}
+#container {
+    display: flex;
+    x-justify-content: space-around;
+    x-align-items: stretch;
+    max-width: 1200px;
+}
+.column.left {
+    width: 230px;
+    flex: 0 0 230px;
+}
+.column.right {
+    width: 230px;
+    flex: 0 0 230px;
+    border-left: 1px solid #eee;
+}
+.column.center {
+    border-left: 1px solid #eee;
+}

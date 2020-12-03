@@ -77,7 +77,7 @@ const Profile = () => {
     const classes = useStyles();
     return (
         <>
-            <Box className={classes.root}>
+            <Box className={`${classes.root} profile`}>
                 <Box className={classes.profileImage}>
                     <img className={classes.image} src="https://i.ibb.co/vhGdJNq/Kawsar.jpg" alt="Profile"/>
                 </Box>

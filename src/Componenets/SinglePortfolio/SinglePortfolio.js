@@ -57,11 +57,11 @@ const SinglePortfolio = (props) => {
             <Grid item md={12}>
                 <Paper className={classes.paper}>
                     <Grid container alignItems="center">
-                        <Grid item md={6}>
+                        <Grid item sm={12} md={6}>
                             <Link to="/"><img className={classes.img} src={img} alt=""/></Link>
                         </Grid>
-                        <Grid item md={6}>
-                            <Paper className={classes.textPaper}>
+                        <Grid item sm={12} md={6}>
+                            <Paper className={`${classes.textPaper} textPaper`}>
                                 <h2 style={{margin: "0"}}>{name}</h2>
                                 {/* <p>{description}</p> */}
 

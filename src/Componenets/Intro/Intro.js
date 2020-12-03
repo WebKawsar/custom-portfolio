@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 
     },
     intro: {
-        
+        color: "white",
         textAlign: 'center',
         position: "absolute",
         top: "40%",
@@ -40,13 +40,7 @@ const Intro = () => {
             <Box className={classes.root}>
                 <Box className={classes.intro}>
                     <h1 className="animate__animated animate__bounceInDown" style={{fontSize: "60px", color: "white", margin: "0 0"}}>Kawsar Ahmed</h1>
-                    <p className="animate__animated animate__bounceInUp" style={{fontSize: "25px", color: "#aaaaaa", margin: "0"}}>
-                        <Typical
-                            steps={['Front-end Web Developer', 1000, 'Web Developer', 500, "React Developer", 1000, "JavaScript Developer", 1000]}
-                            loop={Infinity}
-                            wrapper="p"
-                        />
-                    </p>
+                    <p className="animate__animated animate__bounceInUp" style={{fontSize: "25px", color: "#aaaaaa", margin: "0"}}>Front-end Web Developer</p>
                 </Box>
             </Box>
         </>

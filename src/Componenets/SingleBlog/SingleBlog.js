@@ -41,7 +41,7 @@ const SingleBlog = (props) => {
     const classes = useStyles();
     return (
         <>
-            <Grid item md={6}>
+            <Grid className="item" item md={6}>
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={

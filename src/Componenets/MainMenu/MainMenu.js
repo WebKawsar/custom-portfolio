@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         backgroundColor: "#222222",
         overflow: "hidden",
         color: "White",
-        position: "absolute",
+        position: "fixed",
         left: "0",
         top: "0",
     },
@@ -52,7 +52,7 @@ const MainMenu = () => {
     const classes = useStyles();
     return (
         <>
-            <Box className={classes.root}>
+            <Box className={`${classes.root} main-menu`}>
                 <Box className={classes.menu}>
                     <Box className={classes.item}>
                         <Link to="/" className={classes.link}>
@@ -81,12 +81,12 @@ const MainMenu = () => {
                             <span style={{fontSize: "14px", display: "block"}}>Portfolio</span>
                         </Link>
                     </Box>
-                    <Box className={classes.item}>
+                    {/* <Box className={classes.item}>
                         <Link to="/blog" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faBook} />
                             <span style={{fontSize: "14px", display: "block"}}>Blog</span>
                         </Link>
-                    </Box>
+                    </Box> */}
                     <Box className={classes.item}>
                         <Link to="/contact" className={classes.link}>
                             <FontAwesomeIcon className={classes.icon} icon={faEnvelope} />

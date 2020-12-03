@@ -1,0 +1,56 @@
+
+
+@media all and (max-width: 1226px) {
+
+    /* .blog {
+        padding: 0 !important;
+    } */
+
+    /* .item {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+    .MuiGrid-item {
+        margin: 0 auto !important;
+    } */
+
+    .textPaper {
+        margin-left: 0 !important;
+    }
+
+}
+
+
+@media all and (max-width: 960px) {
+
+    .profile {
+        display: none;
+        position: inherit;
+    }
+    .children {
+        margin-left:  85px !important;
+        
+    }
+
+    .makeStyles-intro-54 {
+        left: 30% !important;
+    }
+
+    /* .fixed {
+        flex: 0 1 !important;
+    }
+    .item {
+        max-width: 50% !important;
+        margin: 0 auto;
+    } 
+
+
+     .MuiGrid-item {
+        margin: 0 auto !important;
+    } */
+
+    /* .main-menu {
+        display: none !important;
+    } */
+
+}
