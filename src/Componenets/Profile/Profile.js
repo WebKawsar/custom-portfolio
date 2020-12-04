@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         textAlign: "center",
         backgroundColor: "#444444",
         overflow: "hidden",
-        position: "absolute",
+        position: "fixed",
         left: "85px",
         top: "0"
     },

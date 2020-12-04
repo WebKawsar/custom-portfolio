@@ -7,6 +7,7 @@ import Profile from '../Profile/Profile';
 const useStyles = makeStyles({
     root: {
         // display: "flex",
+        // backgroundColor: "#222222",
         
     },
     fixed: {

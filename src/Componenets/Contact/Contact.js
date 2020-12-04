@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "5px",
         border: "2px solid #444444",
         // backgroundColor: "#444444",
+        marginTop: "30px",
         color: "black",
         textDecoration: "none",
         transitionDuration: "1s",
@@ -96,7 +97,7 @@ const Contact = () => {
                                     margin="normal"
                                     fullWidth
                                     // defaultValue={loggedInUser.name}
-                                    className={`${classes.input2}`}
+                                    className={`${classes.input2} input2`}
                                     id="name"
                                     type="text"
                                     label="Your name / company's name"
@@ -116,7 +117,7 @@ const Contact = () => {
                                     margin="normal"
                                     fullWidth
                                     // defaultValue={loggedInUser.email}
-                                    className={classes.input2}
+                                    className={`${classes.input2} input2`}
                                     id="email"
                                     type="email"
                                     label="Your email address"

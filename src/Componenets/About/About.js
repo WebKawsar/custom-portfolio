@@ -54,6 +54,9 @@ const useStyles = makeStyles({
             color: "black",
             cursor: "pointer"
         }
+    },
+    education: {
+        margin: "40px 0 65px"
     }
 
 
@@ -91,10 +94,11 @@ const About = () => {
                                 </Grid> */}
                             </Grid>
                         </Grid>
-                        <Grid item md={12}>
-                            <h3 className={classes.about}> <span className={classes.highlighter}>Skills</span></h3>
+                        <Grid className="animate__animated animate__bounceInRight" item md={12}>
+                            <h3 className={classes.about}>Tech <span className={classes.highlighter}>Skills</span></h3>
                             <Box>
                                 <button className={classes.skillBtn}>React</button>
+                                <button className={classes.skillBtn}>Redux</button>
                                 <button className={classes.skillBtn}>Node</button>
                                 <button className={classes.skillBtn}>MongoDB</button>
                                 <button className={classes.skillBtn}>Express</button>
@@ -106,6 +110,7 @@ const About = () => {
                                 <button className={classes.skillBtn}>HTML</button>
                                 <button className={classes.skillBtn}>CSS</button>
                                 <button className={classes.skillBtn}>Firebase</button>
+                                <button className={classes.skillBtn}>Firestore</button>
                                 <button className={classes.skillBtn}>Netlify</button>
                                 <button className={classes.skillBtn}>Heroku</button>
                                 <button className={classes.skillBtn}>Jira</button>
@@ -116,7 +121,7 @@ const About = () => {
                         </Grid>
 
                         <Grid className="animate__animated animate__bounceInUp" item md={12}>
-                            <h3 className={classes.about}> <span className={classes.highlighter}>Education</span></h3>
+                            <h3 className={`${classes.about} ${classes.education}`}>Education &amp; <span className={classes.highlighter}>Professional Training </span></h3>
                             <Grid container>
                                 <Grid item md={12}>
                                     {/* <p className={classes.myInfo}>National University, Bangladesh</p> */}
@@ -151,7 +156,7 @@ const About = () => {
                                             <h3 className="vertical-timeline-element-title">Basis Institute of Technology Management (BITM)</h3>
                                             <h4 className="vertical-timeline-element-subtitle">Certified Web Development Specialist</h4>
                                             <p>
-                                            Php, mySql, jQuery, JavaScript
+                                            PHP, MySql, JQuery, JavaScript
                                             </p>
                                         </VerticalTimelineElement>
 

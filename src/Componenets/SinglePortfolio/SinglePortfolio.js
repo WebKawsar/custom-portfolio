@@ -29,17 +29,28 @@ const useStyles = makeStyles({
         color: "white"
     },
     skillButton: {
-        padding: "5px 15px",
-        margin: "0 3px",
+        padding: "8px 18px",
+        margin: "5px 3px",
         backgroundColor: "#4B5769",
-        border: "none",
         color: "white",
-        cursor: "pointer"
+        cursor: "pointer",
+        borderRadius: "2px",
+        border: "none",
+        textDecoration: "none",
+        transitionDuration: "1s",
+        "&:hover": {
+            backgroundColor: "white",
+            color: "black",
+            cursor: "pointer"
+        }
     },
     icon: {
         fontSize: "25px",
         color: "white",
         margin: "20px 10px",
+    },
+    li: {
+        marginBottom: "5px"
     }
 
 
@@ -57,16 +68,16 @@ const SinglePortfolio = (props) => {
             <Grid item md={12}>
                 <Paper className={classes.paper}>
                     <Grid container alignItems="center">
-                        <Grid item sm={12} md={6}>
+                        <Grid className="portfolioFullWidth" item sm={12} md={6}>
                             <Link to="/"><img className={classes.img} src={img} alt=""/></Link>
                         </Grid>
-                        <Grid item sm={12} md={6}>
+                        <Grid className="portfolioFullWidth" item sm={12} md={6}>
                             <Paper className={`${classes.textPaper} textPaper`}>
                                 <h2 style={{margin: "0"}}>{name}</h2>
                                 {/* <p>{description}</p> */}
 
                                 <ul style={{listStyle: "none", margin: "12px 0", padding: "0"}}>
-                                    {description && description.map(desc => <li> -- {desc}</li>)}
+                                    {description && description.map((desc, index) => <li className={classes.li} key={index}>-- {desc}</li>)}
                                 </ul>
                                 <Box>
                                     <button className={classes.skillButton}>React</button>
